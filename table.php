@@ -5,7 +5,8 @@
 
   // Step 1: Using the correct MySQLi function, fetch all the rows as associative arrays (replace the null value with the expression)
   $rows = mysqli_fetch_all($result, MYSQLI_ASSOC); 
-  var_dump($rows); 
+  var_dump($rows);  //this is my connection status
+  
 ?>
 
 <!DOCTYPE html>
