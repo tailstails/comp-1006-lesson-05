@@ -11,7 +11,7 @@ if(empty($_POST['id'])) {
     include('../.env.php'); 
 
 
-$conn = mysqli_connect(getenv('DB_HOST'), getenv('DB_USER'), getenv('DB_PASS'), getenv('DB'); 
+$conn = mysqli_connect(getenv('DB_HOST'), getenv('DB_USER'), getenv('DB_PASS'), getenv('DB')); 
 
     $sql = "UPDATE countries SET
             name = '{$_POST['name']}', 

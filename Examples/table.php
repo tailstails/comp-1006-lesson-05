@@ -2,7 +2,7 @@
     include('../.env.php'); 
 
 
-    $conn = mysqli_connect(getenv('DB_HOST'), getenv('DB_USER'), getenv('DB_PASS'), getenv('DB'); 
+    $conn = mysqli_connect(getenv('DB_HOST'), getenv('DB_USER'), getenv('DB_PASS'), getenv('DB')); 
     
     $result = mysqli_query($conn, "SELECT * FROM countries"); 
     $rows = mysqli_fetch_all($result, MYSQLI_ASSOC); 

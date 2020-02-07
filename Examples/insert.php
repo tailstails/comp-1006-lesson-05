@@ -3,7 +3,7 @@
 include('../.env.php'); 
 
 
-$conn = mysqli_connect(getenv('DB_HOST'), getenv('DB_USER'), getenv('DB_PASS'), getenv('DB'); 
+$conn = mysqli_connect(getenv('DB_HOST'), getenv('DB_USER'), getenv('DB_PASS'), getenv('DB')); 
     var_dump($_POST); // Post contains all of the form data 
 
     $sql = "INSERT INTO countries (
