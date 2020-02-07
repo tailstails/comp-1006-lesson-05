@@ -8,7 +8,10 @@ if(empty($_POST['id'])) {
     exit;
 }
     var_dump($_POST); 
-    $conn = mysqli_connect('localhost', 'root', null, 'lesson_03');
+    include('../.env.php'); 
+
+
+$conn = mysqli_connect(getenv('DB_HOST'), getenv('DB_USER'), getenv('DB_PASS'), getenv('DB'); 
 
     $sql = "UPDATE countries SET
             name = '{$_POST['name']}', 
