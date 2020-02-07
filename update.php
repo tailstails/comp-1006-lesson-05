@@ -6,7 +6,10 @@ if(empty($_POST['id'])) {
 }
     var_dump($_POST); 
   // Our database connection
-  $conn = mysqli_connect("localhost", "root", null, "lesson_03");
+  include('./.env.php'); 
+
+
+  $conn = mysqli_connect(getenv('DB_HOST'), getenv('DB_USER'), getenv('DB_PASS'), getenv('DB');
 
   // Step 1: Write the SQL to update the row (replace null with the string)
   $sql = "UPDATE products SET
